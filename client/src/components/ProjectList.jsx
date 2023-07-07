@@ -41,7 +41,7 @@ function ProjectList() {
         listStyle: "none",
         overflowX: "scroll",
         scrollSnapType: "x mandatory",
-        backgroundColor: 'background.default',
+        backgroundColor: 'primary.light',
     }}
     >
         {projects.map((project, index)=> (

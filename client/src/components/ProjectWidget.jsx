@@ -25,7 +25,7 @@
     return (
       <Box m="2rem" flexBasis = "100%" 
         sx={{boxShadow:24,
-        backgroundColor: 'primary.light',
+        backgroundColor: 'background.default',
         borderRadius: "0.75rem",
         height: "300px",
         display: "flex",

@@ -20,6 +20,7 @@ function Projects() {
           // gap="2rem"
           fontFamily= "Copperplate"
           paddingTop={isNonMobileScreens? "10%" : "2%"}
+
           // width = "800px"
         >
 
