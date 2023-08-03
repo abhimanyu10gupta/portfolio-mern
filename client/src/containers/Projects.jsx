@@ -3,6 +3,7 @@ import { Box, Typography, useMediaQuery } from "@mui/material";
 import LanguagesList from '../components/LanguagesList';
 import StackList from '../components/StackList';
 import ProjectList from '../components/ProjectList';
+import bgImage from '../resources/bg2.jpg'
 
 function Projects() {
     const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -11,6 +12,10 @@ function Projects() {
     <section id="projects">
     <Box height= "100vh" width="100vw" sx={{
       scrollSnapAlign: "center",
+      // backgroundImage: `url(${bgImage})`,
+      // backgroundSize: 'cover',
+      backgroundColor: 'transparent',
+
   }}>
       <Box paddingTop={"10rem"}>
         <Typography variant={"h3"} textAlign="center">Projects</Typography>

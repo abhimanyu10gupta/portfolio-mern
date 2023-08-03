@@ -9,9 +9,13 @@ import { Link } from 'react-router-dom';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SwipeMenu from './SwipeMenu';
 import SimpleDialogDemo from './ResumeDialog'
+import bgImage from '../resources/bg3.jpg'
+
+import Resume from '../containers/Resume';
+
 function Home() {
     const { palette } = useTheme();
-    const bgColor = palette.neutral.main;
+    // const bgColor = palette.neutral.main;
     const isNonMobile = useMediaQuery("(min-width:600px)");
     const socials ={
         "linkedin" : "https://www.linkedin.com/in/aabhimanyu-gupta/",
@@ -21,8 +25,11 @@ function Home() {
     }
 
   return (
-    <section id="home">
+    <section id="home" >
     <Box sx={{
+        // backgroundImage: `url(${bgImage})`,
+        backgroundColor: 'transparent',
+        backgroundSize: 'cover',
         height: "100vh",
         width: "100vw",
         display: "flex",
@@ -38,15 +45,14 @@ function Home() {
 
         }}>
             <Box sx={{
-                  backgroundImage: "linear-gradient(#25251f,  #25251f, green 85%)",
                 paddingTop: "2rem",
                 marginLeft:isNonMobile? undefined: "2rem",
                 marginRight: isNonMobile? undefined: "2rem",
             }}>
-                <Typography fontFamily={'Copperplate'} fontWeight={"bold"} fontSize={isNonMobile? "60px": "30px"} color = {bgColor}>Aabhimanyu Gupta</Typography>
+                <Typography fontFamily={'Copperplate'} fontWeight={"bold"} fontSize={isNonMobile? "60px": "30px"} >Aabhimanyu Gupta</Typography>
             </Box>
             <Box>
-                <Typography fontSize={isNonMobile? "35px": "25px"} color={bgColor}>Software Developer</Typography>
+                <Typography fontSize={isNonMobile? "35px": "25px"} >Software Developer</Typography>
             </Box>
 
         </Box>

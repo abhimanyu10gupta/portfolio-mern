@@ -127,10 +127,7 @@ export default function Navbar(props) {
           <ListItem sx={{
             justifyContent:"center"
           }}key={"logo"} >
-          <Box sx={{
-                  backgroundImage: "linear-gradient(#353535,  #353535, green 100%)",
-                // paddingTop: "2rem",
-            }}>
+          <Box>
               <Typography sx={{
               }} variant="h6" component="div">
                               AG
@@ -195,7 +192,7 @@ export default function Navbar(props) {
 
               {/* </FlexBetween> */}
               <Box sx={{
-                  backgroundImage: "linear-gradient(#25251f,  #25251f, green 100%)",
+                  // backgroundImage: "linear-gradient(#25251f,  #25251f, green 100%)",
                 // paddingTop: "2rem",
             }}>
               <Typography variant="h6" component="div">
@@ -230,7 +227,7 @@ export default function Navbar(props) {
               }}
           >
             <Box sx={{
-                  backgroundImage: "linear-gradient(#25251f,  #25251f, green 100%)",
+                  // backgroundImage: "linear-gradient(#25251f,  #25251f, green 100%)",
                 // paddingTop: "2rem",
             }}>
               <Typography variant="h6" component="div">

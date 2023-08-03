@@ -63,10 +63,10 @@ export const colorTokens = {
                 medium: colorTokens.grey[400],
                 light: colorTokens.grey[700],
               },
-              background: {
-                default: colorTokens.grey[900],
-                alt: colorTokens.grey[800],
-              },
+              // background: {
+              //   default: '#000000',
+              //   alt: '#000000',
+              // },
             }
           : {
               // palette values for light mode
@@ -82,10 +82,10 @@ export const colorTokens = {
                 medium: colorTokens.grey[300],
                 light: colorTokens.grey[50],
               },
-              background: {
-                default: colorTokens.grey[10],
-                alt: colorTokens.grey[0],
-              },
+              // background: {
+              //   default: '#000000',
+              //   alt: '#000000',
+              // },
             }),
       },
       typography: {

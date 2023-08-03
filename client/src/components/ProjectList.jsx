@@ -5,6 +5,7 @@ import {useMediaQuery} from '@mui/material';
 import sociopediaThumb from '../resources/sociopedia.png'
 import ecomThumb from '../resources/ecom.png'
 import { useTheme } from '@emotion/react';
+
 function ProjectList() {
     const isNonMobile = useMediaQuery("(min-width:600px)");
     const { palette } = useTheme();
@@ -33,7 +34,7 @@ function ProjectList() {
         // },
     ]
   return (
-    <Box boxShadow= "24" borderRadius= "0.75rem" bgColor={bgColor}
+    <Box boxShadow= "24" borderRadius= "0.75rem" bgcolor={bgColor}
     mt={isNonMobile ? undefined : "2rem"} textAlign="center"
     sx={{
         display: "flex",
@@ -41,7 +42,7 @@ function ProjectList() {
         listStyle: "none",
         overflowX: "scroll",
         scrollSnapType: "x mandatory",
-        backgroundColor: 'primary.light',
+        backgroundColor: 'transparent',
     }}
     >
         {projects.map((project, index)=> (
